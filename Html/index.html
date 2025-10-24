@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/global.css">
+    <title>Feed</title>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="logo">
+            <img class="logo-colorido" src="Ícones/Logo/Logo Colorido.svg" alt="Logo">
+        </div>
+        <form  action="buscar" method="get" class="pesquisar-locais">
+            <div class="icone-container">
+                <img class="icone-pesquisar" src="Ícones/Ações/Pesquisar.svg" alt="Ícone de lupa" />
+            </div>
+            <input  type="text" id="pesquisa" placeholder="Pesquise..." name="pesquisa" />
+        </form>
+
+        <a class="botao-galeria" href="#">
+            <img class="icone-galeria" src="Ícones/Ações/Galeria.svg" alt="Ícone da Galeria" />
+            <span class="galeria">Galeria</span>
+        </a>
+    </header>
+
+    <div class="conteudo">
+        <aside class="parte-lateral">
+            <section class="filtros-estabelecimentos">
+                <nav class="menu">
+                    <ul class="navegação">
+                        <li><a class="lista-navegacao" href="#"><img class="icone-menu" src="Ícones/Filtros/Café.svg"
+                                    alt="Ícone-Cafeteria">Cafeteria</a></li>
+                        <li><a class="lista-navegacao" href="#"><img class="icone-menu"
+                                    src="Ícones/Filtros/Restaurante.svg" alt="Ícone-Cultura">Cultura</a></li>
+                        <li><a class="lista-navegacao" href="#"><img class="icone-menu"
+                                    src="Ícones/Filtros/Livraria.svg" alt="Ícone-Livraria">Livraria</a></li>
+                        <li><a class="lista-navegacao" href="#"><img class="icone-menu" src="Ícones/Filtros/Museu.svg"
+                                    alt="Ícone-Museu">Museu</a></li>
+                        <li><a class="lista-navegacao" href="#"><img class="icone-menu"
+                                    src="Ícones/Filtros/Natureza.svg" alt="Ícone-Natureza">Natureza</a></li>
+                        <li><a class="lista-navegacao" href="#"><img class="icone-menu"
+                                    src="Ícones/Filtros/Restaurante.svg" alt="Ícone-Restaurante">Restaurante</a></li>
+                    </ul>
+                </nav>
+            </section>
+
+            <section class="sair">
+                <div class="sair-do-feed">
+                     <img class="foto-usuario" src="Img/perfil_galeria.png" alt="foto_usuario"> 
+
+                <div class="informacoes-usuario">
+                     <h1 class="usuario">Carlinhos</h1>
+                     <h2 class="nome-usuario">Carlos Eduardo</h2>
+                </div>
+                    <img class="icone-sair-verde" src="Ícones/Ações/Sair.svg" alt="Ícone-Sair">
+                </div>
+            </section> 
+        </aside>
+
+        <main>
+            <h3 class=titulo-recomendacao">Recomendação Mensal</h3>
+
+            <section class="recomendacao">
+                <article class="card-recomendacao">
+                        <img class="foto" src="Img/a casa de antonia.svg" alt=>
+                        <img class="foto" src="Img/Livraria Gato Sem Rabo.svg" alt=>
+                        <img class="foto" src="Img/London coffee.svg" alt=>
+                        <img class="foto" src="Img/museu biológico.svg" alt=>
+                        <img class="foto" src="Img/Museu justiça.svg" alt=>
+                         <img class="foto" src="Img/Museu justiça.svg" alt=>
+                        <img class="foto" src="Img/vila.svg" alt=>
+                </article>
+            </section>
+
+            <section class="Feed">
+
+                <article class="post">
+                     <figure>
+                        <img class="foto-post" src="Rectangle 329.svg" alt="Cafeteria Kiki Café">
+                        <figcaption class="legenda-foto">Kiki Café</figcaption>
+                    </figure>
+                    <div class="acoes">
+                        <img class="icone-post" src="Ícones/Ações/Heart.svg" alt="Ícone Coração">
+                        <img class="icone-post" src="Ícones/Ações/Location.svg" alt="Ícone Localização">
+                    </div>
+                </article> 
+                  <article class="post">
+                    <figure>
+                        <img class="foto-post" src="Rectangle 329.svg" alt="Cafeteria Kiki Café">
+                         <figcaption class="legenda-foto">Kiki Café</figcaption>
+                    </figure>
+                    <div class="acoes">
+                        <img class="icone-post" src="Ícones/Ações/Heart.svg" alt="Ícone Coração">
+                        <img class="icone-post" src="Ícones/Ações/Location.svg" alt="Ícone Localização">
+                    </div>
+                </article> 
+            </section>
+        </main>
+    </div> 
+</body>
+
+</html>
