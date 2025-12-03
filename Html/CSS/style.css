@@ -124,8 +124,7 @@ body {
     margin: 20px 40px 0;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    gap:10px;
+    gap: 8%;
 
 
     /* position: fixed;
@@ -147,13 +146,12 @@ body {
     background-color: var(--branco);
     border-radius: 15px;
     justify-content: center;
-    height: 100%;
+    height: 105%;
 }
 
 .navegação {
     list-style: none;
     padding: 10% 20%;
-    margin: 0;
     display: flex;
     flex-direction: column;
     gap: 35px;
@@ -176,49 +174,45 @@ body {
 }
 
 .icone-menu {
-    width: 24px;
-    height: 24px;
+    width: 10%;
+    height: 10%;
     margin-right: 30px;
     display: inline-block;
 }
 
 .sair {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto 1fr 1fr;
+    grid-template-areas:
+        "foto nome sair";
+    padding: 8% 14%;
+    gap: 10px;
+    align-items: center;
     background-color: var(--branco);
     border-radius: 15px;
     justify-content: center;
-    align-items: center;
-    height: 50%;
-}
-
-.sair-do-feed {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    height: 60%;
 }
 
 .foto-usuario {
-    margin-left: 25px;
-    width: 80px;
-    height: 80px;
+    grid-area: foto;
+    width: 5vw;
+    height: 12vh;
     object-fit: cover;
-    border-radius: 60px;
-    margin-bottom: 15px;
+    border-radius: 30px;
     box-shadow: var(--sombra-md);
 }
 
-.informacoes-usuario {
-    margin-right: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100px;
+.bloco-nome {
+    grid-area: nome;
+    width: 145px;
 }
 
 .nome-usuario {
-    font-size: 14px;
     color: #666;
-    margin-bottom: 5px;
+    font-size: 1em;
+    font-weight: bolder;
+    font-style: italic;
 }
 
 .usuario {
@@ -226,16 +220,15 @@ body {
     font-weight: 500;
     font-weight: bolder;
     color: var(--texto);
-    margin-bottom: 10px;
 }
 
 .icone-sair-verde {
-    width: 30px;
-    height: 30px;
+    grid-area: sair;
+    width: 35px;
+    height: 35px;
     cursor: pointer;
     flex-shrink: 0;
     transition: filter 0.2s ease;
-    margin-right: 20px;
 }
 
 .icone-sair-verde:hover {
@@ -243,25 +236,30 @@ body {
 }
 
 
+main{
+    width: 75vw;
+    height: 85vh;
+    overflow-y: scroll;
+    padding: 15px 40px;
+}
+
 .titulo-recomendacao {
-    margin-top: 200px;
     font-size: 1.8rem;
 }
 
-.recomendacao {
-    margin-bottom: 20px;
+.recomendacao{
+    padding-top: 15px;
 }
 
 .card-recomendacao {
     display: flex;
     align-items: center;
-    margin-top: 10px;
     background-color: var(--branco);
     border-radius: 15px;
-    width: 925px;
-    height: 120px;
-    gap: 30px;
-    padding: 25px 15px;
+    width: 100%;
+    height: 20%;
+    gap: 40px;
+    padding: 2% 3%;
 }
 
 .foto {
@@ -276,14 +274,23 @@ body {
 }
 
 .feed {
+    height: 140%;
+    width: 100%;
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 15px;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    padding-top: 15px;
 }
 
+::-webkit-scrollbar {
+    display: none;
+    width: 0;
+    height: 0;
+} 
+
 .post {
-    width: 350px;
-    height: 300px;
+    width: 100%;
+    height:100%;
     background-color: var(--branco);
     border-radius: 15px;
     padding: 15px;
@@ -298,12 +305,6 @@ body {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.50);
 }
 
-.post figure {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-}
 
 .foto-post {
     width: 100%;
